@@ -1,95 +1,123 @@
-Certificate Verification System
+# Certificate Verification System
 
+The **Certificate Verification System** is a web application designed to streamline the process of issuing and verifying internship certificates.
 
-Overview
+This platform allows administrators to upload student certificate data in bulk using an Excel sheet. The uploaded data includes details such as **certificate ID, student name, internship domain, and internship duration**.
 
-The Certificate Verification System is a web application designed to simplify the process of issuing and verifying internship certificates.
+Students can search for their certificate using a **unique certificate ID**, view their certificate with all the relevant details pre-filled, and download it in a printable format.
 
-Administrators can upload student certificate data through an Excel sheet containing details such as certificate ID, student name, internship domain, and internship duration.
+The system is built using the **MERN Stack** to ensure efficient data handling and a seamless user experience.
 
-Students can then search for their certificate using the certificate ID, view the certificate with pre-filled information, and download it in a printable format.
+---
 
-This system improves certificate management, verification, and accessibility for students and administrators.
+# Tech Stack
 
-Tech Stack
+This project is built using the following technologies:
 
-This project is built using the MERN stack:
+* **MongoDB** – Database for storing student and certificate data
+* **Express.js** – Backend framework for handling APIs
+* **React.js** – Frontend user interface
+* **Node.js** – Runtime environment for server-side development
 
-MongoDB – Database for storing certificate and user data
+---
 
-Express.js – Backend framework for API development
+# Features
 
-React.js – Frontend user interface
+## User Roles and Authentication
 
-Node.js – Server runtime environment
+* Create and manage **Admin accounts**
+* Create and manage **User accounts**
+* Secure login system with authentication
+* Session-based access control
 
-Features
-User Roles and Authentication
+---
 
-Create and manage Admin accounts
+## Certificate Search and Verification
 
-Create and manage User accounts
+Students can easily verify their certificates.
 
-Secure authentication and session management
+* Search certificate using **Certificate ID**
+* Display certificate details instantly
+* Verify certificate authenticity before downloading
+* **QR Code verification for additional security**
 
-Certificate Search and Verification
+---
 
-Students can search certificates using a unique certificate ID
+## Data Management
 
-View certificate details before downloading
+Administrators can efficiently manage certificate data.
 
-Quick and simple verification process
+* Upload **bulk student data via Excel file**
+* Store certificate records securely in **MongoDB**
+* Fast and reliable data handling
 
-Data Management
+---
 
-Admins can upload bulk student data via Excel files
+## Certificate Generation
 
-All certificate data stored securely in MongoDB
+The system automatically generates certificates using stored student data.
 
-Efficient data handling and management
+* Automatically populate certificate details
+* Generate certificates with accurate student information
+* Reduce manual errors during certificate creation
 
-Certificate Generation
+---
 
-Automatically generate certificates using uploaded data
+## Certificate Download
 
-Populate certificates with correct student information
+Students can download their certificates after verification.
 
-Reduce manual errors during certificate creation
+* Download certificates after viewing details
+* Certificates available in **printable format (PDF)**
 
-Certificate Download
+---
 
-Students can download certificates after verification
+## Security and Data Integrity
 
-Certificates available in printable format (PDF)
+The system ensures data protection and accuracy.
 
-Security and Data Integrity
+* Secure authentication system
+* Data validation during Excel upload
+* Prevent incorrect or incomplete data entries
+* Maintain integrity of certificate records
 
-Secure login system
+---
 
-Data validation during Excel upload
+# Project Workflow
 
-Prevents incorrect or incomplete data entries
+1. Admin logs into the system
+2. Admin uploads student certificate data using an Excel sheet
+3. The system stores data securely in the database
+4. Students search for their certificate using **Certificate ID**
+5. The system displays certificate details with a **QR verification option**
+6. Students download the certificate
 
-Project Workflow
+---
 
-Admin logs into the system
+# Installation Guide
 
-Admin uploads student certificate data via Excel sheet
+## Clone the Repository
 
-Data is stored securely in the database
-
-Students search for their certificate using Certificate ID
-
-System displays the certificate with pre-filled details
-
-Students can download the certificate
-
-Installation and Setup
-1. Clone the Repository
+```bash
 git clone https://github.com/himansu2198/Certificate-verification-system.git
-2. Navigate to the Project
+```
+
+## Navigate to Project Folder
+
+```bash
 cd Certificate-verification-system
-3. Install Dependencies
+```
+
+## Install Dependencies
+
+```bash
 npm install
-4. Run the Project
+```
+
+## Run the Project
+
+```bash
 npm start
+```
+
+
